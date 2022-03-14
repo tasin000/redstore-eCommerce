@@ -1,0 +1,116 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* reset codes and common codes */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+  height: 100vh;
+  background: linear-gradient(to bottom, #FFDAD6, #FFE6E4, #fff);
+}
+
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.w-50{
+  width: 50%;
+}
+
+/* navigation bar designing - index.html, products.html, about.html, contact.html, account.html, cart.html */
+#navigation-bar{
+  padding: 20px;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  cursor: pointer;
+  width: 170px;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-links a{
+  color: #867470;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.nav-links i{
+  font-size: 20px;
+}
+
+/* home section design - index.html */
+#home-section{
+  padding: 50px 0;
+}
+
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1{
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+.home p{
+  color: #867470;
+  margin: 15px 0;
+}
+
+.home img{
+  width: 100%;
+}
+
+.explore-btn{
+  border: 0;
+  background-color: #DF5532;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 15px 0;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s linear;
+}
+
+.explore-btn svg{
+  width: 25px;
+  margin: 0 5px;
+}
+
+.explore-btn:hover{
+  background-color: #4D2E2C;
+}
