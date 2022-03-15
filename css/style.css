@@ -19,7 +19,7 @@ header{
   background: linear-gradient(to bottom, #FFDAD6, #FFE6E4, #FCEEED);
 }
 
-#featured-products, #latest-products, #exclusive-product{
+#featured-products, #latest-products, #exclusive-product, #testimonials-section, #companies-section{
   margin: 60px 0;
 }
 
@@ -196,3 +196,58 @@ header{
 .exclusive h1{
   font-size: 50px;
 }
+
+/* testimonials section - index.html */
+.testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.testimonial{
+  margin: 0 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 15px #808080;
+  text-align: center;
+}
+
+.testimonial i{
+  color: #ff4004;
+}
+
+.testimonial p{
+  color: #808080;
+  text-align: center;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.testimonial img{
+  border-radius: 50%;
+  margin: 10px 0;
+  width: 25%;
+}
+
+.testimonial h3{
+  color: #565457;
+}
+
+/* companies section - index.html */
+.companies{
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 60px;
+}
+
+.companies img{
+  filter: grayscale(100%);
+  transition: filter .1s linear;
+  cursor: pointer;
+}
+
+.companies img:hover{
+  filter: grayscale(0%);
+}
+
+/* footer design - index.html, products.html, about.html, contact.html, account.html and cart.html */
