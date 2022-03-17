@@ -55,6 +55,10 @@ html {
   margin: 5px auto;
 }
 
+.none{
+  display: none;
+}
+
 /* navigation bar designing - index.html, products.html, about.html, contact.html, account.html, cart.html */
 #navigation-bar{
   padding: 20px;
@@ -314,6 +318,90 @@ html {
 .pagination button:hover{
   background: #F45D38;
   color: #fff;
+}
+
+/* account section - account.html */
+#account-section{
+  background: linear-gradient(to bottom, #FFDAD6, #FFE6E4, #FCEEED);
+  padding: 60px 0;
+}
+
+.options{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-account{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.section-banner img{
+  width: 100%;
+}
+
+.main-account-section{
+  margin: auto;
+  padding: 30px 30px;
+  box-shadow: 5px 5px 10px #808080;
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 450px;
+  max-height: 450px;
+}
+
+.account-options{
+  display: flex;
+  flex-direction: row;
+}
+
+.account{
+  display: flex;
+  flex-direction: column;
+  transition: all .2s linear;
+}
+
+.account input{
+  width: 300px;
+  margin: 10px 0;
+  border: 1px solid #d3d3d3;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.account p{
+  text-align: center;
+  color: #565457;
+  cursor: pointer;
+}
+
+.account p:hover{
+  text-decoration: underline;
+}
+
+.login-or-register{
+  margin: 10px 0;
+}
+
+.login-or-register h3{
+  color: #565457;
+  cursor: pointer;
+}
+
+.account-hr{
+  border: 2px solid #f45D38;
+  border-radius: 10px;
+  margin: 5px;
+  width: 35%;
+  transform: translateX(25px);
+  transition: transform .3s linear;
+}
+
+.account-options{
+  margin: 60px 0;
 }
 
 /* footer design - index.html, products.html, about.html, contact.html, account.html and cart.html */
