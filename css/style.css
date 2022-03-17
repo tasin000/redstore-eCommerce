@@ -258,7 +258,63 @@ html {
 }
 
 /* all products - products.html */
+#all-products{
+  margin: 100px 0;
+}
 
+.products-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.products-page-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.products-page-header h2{
+  color: #010001;
+}
+
+.products-page-header select{
+  border: 1px solid #F45D38;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+}
+
+.pagination button{
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+  margin: 0 7px;
+  border: 1px solid #F45D38;
+  color: #010001;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pagination button svg{
+  width: 20px;
+  height: 20px;
+}
+
+.pagination button:hover{
+  background: #F45D38;
+  color: #fff;
+}
 
 /* footer design - index.html, products.html, about.html, contact.html, account.html and cart.html */
 #footer-section{
