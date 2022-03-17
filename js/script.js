@@ -15,9 +15,3 @@ showRegistration = () => {
      registrationForm.style.display = 'flex';
      optionsHR.style.transform = 'translateX(145px)';
 }
-
-// Password show or hide
-const eyeIcon = document.getElementById('fa-eye-slash');
-const passwordField = document.getElementById('password-field');
-
-showOrHide = () => {}

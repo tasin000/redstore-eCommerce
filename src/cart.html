@@ -1,18 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Cart - RedStore</title>
+     <title>Cart - Products</title>
      <!-- CSS -->
      <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+     <header>
+          <!-- navigation bar -->
+          <section id="navigation-bar">
+               <div class="container">
+                    <nav>
+                         <div class="nav-bar">
+                              <div class="logo">
+                                   <a href="../index.html">
+                                        <img src="../images/logo.png" alt="Loading...">
+                                   </a>
+                              </div>
+
+                              <div class="nav-links">
+                                   <a href="../index.html">Home</a>
+                                   <a href="./products.html">Products</a>
+                                   <a href="./account.html">Account</a>
+                                   <a href="./cart.html"><img src="../images/cart.png" alt=""></a>
+                              </div>
+                         </div>
+                    </nav>
+               </div>
+          </section>
+     </header>
+
+     <main>
+          <!-- cart section -->
+          <section id="cart-section">
+               <div class="cart">
+                    <div class="container-fluid">
+                         <div class="cart-products">
+                              <div class="table-heading">
+                                   <h2>Product</h2>
+                                   <h2>Quantity</h2>
+                                   <h2>Subtotal</h2>
+                              </div>
+
+                              <div class="table-row">
+                                   <div class="product-preview">
+                                        <img src="../images/product-1.jpg" alt="Loading...">
+                                        <div class="product-desc">
+                                             <p>Red Printer T-Shirt</p>
+                                             <p>Price: $50.00</p>
+                                             <span>Remove</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="quantity">
+                                        <button class="btn-square" id="plus-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="btn-square" id="minus-btn">+</button>
+                                   </div>
+
+                                   <div class="subtotal">
+                                        <h3>$50.00</h3>
+                                   </div>
+                              </div>
+
+                              <div class="table-row">
+                                   <div class="product-preview">
+                                        <img src="../images/product-2.jpg" alt="Loading...">
+                                        <div class="product-desc">
+                                             <p>HRX Sports Shoes</p>
+                                             <p>Price: $75.00</p>
+                                             <span>Remove</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="quantity">
+                                        <button class="btn-square" id="plus-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="btn-square" id="minus-btn">+</button>
+                                   </div>
+
+                                   <div class="subtotal">
+                                        <h3>$75.00</h3>
+                                   </div>
+                              </div>
+
+                              <div class="table-row">
+                                   <div class="product-preview">
+                                        <img src="../images/product-3.jpg" alt="Loading...">
+                                        <div class="product-desc">
+                                             <p>HRX Gray Trackpants</p>
+                                             <p>Price: $75.00</p>
+                                             <span>Remove</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="quantity">
+                                        <button class="btn-square" id="plus-btn">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="btn-square" id="minus-btn">+</button>
+                                   </div>
+
+                                   <div class="subtotal">
+                                        <h3>$75.00</h3>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="all-costs">
+                              <div class="cost">
+                                   <hr class="cart-hr">
+                                   <div class="cost-item">
+                                        <h4>Subtotal</h4>
+                                        <h4>$200.00</h4>
+                                   </div>
+
+                                   <div class="cost-item">
+                                        <h4>Tax</h4>
+                                        <h4>$35.00</h4>
+                                   </div>
+
+                                   <div class="cost-item">
+                                        <h4>Total</h4>
+                                        <h4>$235.00</h4>
+                                   </div>
+
+                                   <button class="btn">
+                                        Proceed to Checkout
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                             <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+
+     <div class="clear-float"></div>
+
+     <footer>
+          <section id="footer-section">
+               <div class="container">
+                    <div class="footer">
+                         <div class="row">
+                              <div class="col-1">
+                                   <h4>Download Our App</h4>
+                                   <p>Download app for Android and ios mobile phone</p>
+                                   <div class="apps">
+                                        <img src="../images/play-store.png" alt="Loading...">
+                                        <img src="../images/app-store.png" alt="Loading...">
+                                   </div>
+                              </div>
+
+                              <div class="col-2">
+                                   <a href="../index.html">
+                                        <img src="../images/logo-white.png" alt="Loading...">
+                                   </a>
+                                   <p>Our Purpose is to Sustainably Make The Pleasure and Benefits of Sports
+                                        Accessible to the Many</p>
+                              </div>
+
+                              <div class="col-3">
+                                   <div class="links">
+                                        <h4>Useful links</h4>
+                                        <ul>
+                                             <li>Coupons</li>
+                                             <li>Blog Post</li>
+                                             <li>Return Policy</li>
+                                             <li>Join Affiliate</li>
+                                        </ul>
+                                   </div>
+
+                                   <div class="links">
+                                        <h4>Follow Us</h4>
+                                        <ul>
+                                             <li>Facebook</li>
+                                             <li>Twitter</li>
+                                             <li>Instagram</li>
+                                             <li>YouTube</li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <p class="copyright">Copyright 2022 - RedStore. All Rights Reserved</p>
+                    </div>
+               </div>
+          </section>
+     </footer>
+
      <!-- JS -->
-     <script src="js/script.js"></script>
-     
+     <script src="../js/script.js"></script>
+
      <!-- Font Awesome -->
      <script src="https://kit.fontawesome.com/b3e821b02b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

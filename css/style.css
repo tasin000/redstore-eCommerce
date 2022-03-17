@@ -19,13 +19,68 @@ html {
   background: linear-gradient(to bottom, #FFDAD6, #FFE6E4, #FCEEED);
 }
 
-#featured-products, #latest-products, #exclusive-product, #testimonials-section, #companies-section{
+#featured-products, #latest-products, #exclusive-product, #testimonials-section, #companies-section, #cart-section, #product-details{
   margin: 60px 0;
 }
 
 .container{
   max-width: 1250px;
   margin: 0 auto;
+}
+
+.container-fluid{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn{
+  border: 0;
+  background-color: #ff4004;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 15px 0;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s linear;
+}
+
+.btn svg{
+  width: 25px;
+  margin: 0 5px;
+}
+
+.btn:hover{
+  background-color: #4D2E2C;
+}
+
+.btn-square{
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  margin: 0 7px;
+  border: 1px solid #F45D38;
+  color: #010001;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .1s linear;
+}
+
+.btn-square svg{
+  width: 20px;
+  height: 20px;
+}
+
+.btn-square:hover{
+  background: #F45D38;
+  color: #fff;
 }
 
 .flex-view{
@@ -112,31 +167,6 @@ html {
 
 .home img{
   width: 100%;
-}
-
-.btn{
-  border: 0;
-  background-color: #ff4004;
-  color: #fff;
-  padding: 5px 25px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin: 15px 0;
-  font-size: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: background-color .2s linear;
-}
-
-.btn svg{
-  width: 25px;
-  margin: 0 5px;
-}
-
-.btn:hover{
-  background-color: #4D2E2C;
 }
 
 /* categories section - index.html */
@@ -266,11 +296,6 @@ html {
   margin: 100px 0;
 }
 
-.products-container{
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 .products-page-header{
   display: flex;
   flex-direction: row;
@@ -294,30 +319,6 @@ html {
   display: flex;
   flex-direction: row;
   margin: 50px 0;
-}
-
-.pagination button{
-  font-size: 18px;
-  height: 45px;
-  width: 45px;
-  margin: 0 7px;
-  border: 1px solid #F45D38;
-  color: #010001;
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.pagination button svg{
-  width: 20px;
-  height: 20px;
-}
-
-.pagination button:hover{
-  background: #F45D38;
-  color: #fff;
 }
 
 /* account section - account.html */
@@ -404,16 +405,118 @@ html {
   margin: 60px 0;
 }
 
-#password-field{
-  position: relative;
+/* cart page - cart.html */
+.cart-products{
+  margin: 10px;
 }
 
-.eye-icon{
-  position: absolute;
-  left: 1145px;
-  top: 416px;
-  cursor: pointer;
-  z-index: 10;
+.table-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f45D38;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.table-heading h2{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.table-heading :first-child, .product-preview{
+  flex-basis: 30%;
+}
+
+.table-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.table-row img{
+  width: 100px;
+}
+
+.product-preview{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 500px;
+}
+
+.product-desc{
+  margin: 10px;
+}
+
+.product-desc p {
+  color: #565457;
+  margin: 5px 0;
+}
+
+.product-desc span{
+  color: #ff4004;
+}
+
+.quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity input{
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.subtotal h3{
+  color: #565457;
+  font-weight: 400;
+}
+
+.all-costs{
+  float: right;
+  margin: 20px 0;
+}
+
+.clear-float{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.cost{
+  display: flex;
+  flex-direction: column;
+  min-width: 430px;
+  max-width: 500;
+  margin: 0 10px;
+}
+
+.cart-hr{
+  border: 3px solid #f45D38;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.cost-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.cost-item h4{
+  font-size: 18px;
+  font-weight: 400;
+  color: #565457;
 }
 
 /* footer design - index.html, products.html, about.html, contact.html, account.html and cart.html */
