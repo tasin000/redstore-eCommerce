@@ -1,8 +1,8 @@
 // Login or Register
 const loginForm = document.getElementById('login-form');
 const registrationForm = document.getElementById('registration-form');
+registrationForm.style.display = 'none';
 const optionsHR = document.getElementById('options-hr');
-registrationForm.style.display = 'none'
 
 showLogin = () => {
      loginForm.style.display = 'flex';
@@ -15,3 +15,9 @@ showRegistration = () => {
      registrationForm.style.display = 'flex';
      optionsHR.style.transform = 'translateX(145px)';
 }
+
+// Password show or hide
+const eyeIcon = document.getElementById('fa-eye-slash');
+const passwordField = document.getElementById('password-field');
+
+showOrHide = () => {}

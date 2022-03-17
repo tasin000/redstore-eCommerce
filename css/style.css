@@ -404,6 +404,18 @@ html {
   margin: 60px 0;
 }
 
+#password-field{
+  position: relative;
+}
+
+.eye-icon{
+  position: absolute;
+  left: 1145px;
+  top: 416px;
+  cursor: pointer;
+  z-index: 10;
+}
+
 /* footer design - index.html, products.html, about.html, contact.html, account.html and cart.html */
 #footer-section{
   background-color: #010001;
